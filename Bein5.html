@@ -1,15 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <title>Random Link Button</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <button id="random-link">Try Your Luck!</button>
+  <script src="script.js"></script>
+</body>
+</html>
 
+ <style>
+  #random-link {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+   
+     
+     
+ </style>
+ 
+ 
+ 
+ 
+ <script>
+     
+  const links = [
+  "https://beinmatch1.com/",
+  "https://beinmatch1.com/bein/live/14297"
+];
 
-<iframe allowfullscreen="" class="video-iframe" frameborder="0" height="550px" mozallowfullscreen="" name="search_iframe" scrolling="no" src="https://www.livekoora.info/p/bein5.html?m=1" webkitallowfullscreen="" width="100%"></iframe>
-<center>
-    
-  <h1 class="red-text" style="color: #ffffff;">soodag app</h1>  
-    
-</center>
+const button = document.getElementById("random-link");
 
-<style>
-
-body {  background-color:  #53038e; margin: 0;
-
-
-</style>
+button.addEventListener("click", () => {
+  const randomIndex = Math.floor(Math.random() * links.length);
+  const randomLink = links[randomIndex];
+  window.location.href = randomLink;
+});
+ 
+   
+   
+     
+ </script>
