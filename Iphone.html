@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+]<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -28,31 +28,63 @@
       box-sizing: border-box;
     }
 
-    #code {
-      width: 200px;
-      padding: 10px;
-      margin: 10px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      box-sizing: border-box;
-      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    .container {
+        width: 400px;
+        margin: 0 auto;
     }
 
-    #golive {
-      background-color: #008000;
-      color: white;
-      border: none;
-      padding: 10px 20px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 16px;
-      margin: 4px 2px;
-      cursor: pointer;
-      border-radius: 4px;
-      box-sizing: border-box;
-      box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    input {
+        width: 50%;
+        padding: 10px;
+        border: 1px solid #ccc;
+    
     }
+
+    button {
+        width: 20%;
+        background-color: #000;
+        color: #fff;
+        padding: 10px;
+        border: none;
+        cursor: pointer;
+        height: 40px;
+    }
+
+    .btn:hover {
+        background-color: #ccc;
+    }
+
+    /* Searching animation */
+    .searching::after {
+        content: "";
+        border: 2px solid transparent;
+        border-top-color: #fff;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 10px;
+        animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
+
+/* Adjust button size to match text size */
+button.searching {
+    width: auto;
+    padding: 10px;
+}
+
+/* Hide hover effect */
+button.searching:hover {
+    background-color: #000;
+}
     
     #buycode {
     
@@ -103,11 +135,13 @@
 
  
   <h1>fadlan gali code kaaga halkaan</h1>      </center>
-  <div class="container">
-    <input type="text" id="code" placeholder="Enter activation code">
-    <button id="golive" class="btn">Go Live</button>
-    
-  </div>  <center><h2>hadii aad cusub tahay daawo video hoose si aad u gadato code aad galiso<br> halbil=1$, halsano=10$</h2></center>
+  
+        <br>
+        <div class="container">
+            <input type="text" id="code" placeholder="Enter activation code">
+            <button id="golive" class="btn">Go Live</button>
+        </div>
+    <center><h2>hadii aad cusub tahay daawo video hoose si aad u gadato code aad galiso<br> halbil=1$, halsano=10$</h2></center>
    
 
   
@@ -129,22 +163,63 @@
 
 <script>
     
+// Function to set cookie
+function setCookie(name, value, days) {
+        var expires = "";
+        if (days) {
+            var date = new Date();
+            date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+            expires = "; expires=" + date.toUTCString();
+        }
+        document.cookie = name + "=" + (value || "") + expires + "; path=/";
+    }
+
+    // Function to get cookie
+    function getCookie(name) {
+        var nameEQ = name + "=";
+        var ca = document.cookie.split(';');
+        for (var i = 0; i < ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) === ' ') c = c.substring(1, c.length);
+            if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
+        }
+        return null;
+    }
+
+    document.addEventListener("DOMContentLoaded", function() {
+        var rememberedCode = getCookie("activationCode");
+        if (rememberedCode) {
+            document.getElementById("code").value = rememberedCode;
+        }
+    });
+
     const codeInput = document.getElementById("code");
-const goliveButton = document.getElementById("golive");
+    const goliveButton = document.getElementById("golive");
 
-goliveButton.addEventListener("click", function() {
-  const code = codeInput.value;
-  const whatsappCodes = ["3000", "3030","9001", "3001", "1111","1010","6666","7090","7777","3333" ];
+    goliveButton.addEventListener("click", function() {
+        // Add the searching animation class to the button
+        goliveButton.classList.add("searching");
 
-  if (whatsappCodes.includes(code)) {
-    const whatsappLink = `https://sodkk.github.io/Last/Expire.html`;
-    window.location.href = whatsappLink;
-  } else if (code === "9991" || code === "0101" || code === "none." || code === "5566" || code === "6006"|| code === "5454"|| code === "2323"|| code === "1414"|| code === "nonw1," || code==="5151") {
-    window.location.href = "https://sodkk.github.io/Last/Good.html";
-  } else {
-    alert("Hey is ka sax code ka mahadsanid");
-  }
-});
+        const code = codeInput.value;
+        const whatsappCodes = ["3000", "3030", "9001", "3001", "1111", "1010", "6666", "7090", "7777", "3333"];
+
+        if (whatsappCodes.includes(code)) {
+            const whatsappLink = `https://sodkk.github.io/Last/Expire.html`;
+            window.location.href = whatsappLink;
+
+            // Update the stored code in the cookie to the latest one
+            setCookie("activationCode", code, 30); // Cookie expires in 30 days
+        } else if (code === "9991" || code === "0101" || code === "none." || code === "5566" || code === "6006" || code === "5454" || code === "2323" || code === "1414" || code === "5000" || code === "5151") {
+            window.location.href = "https://sodkk.github.io/Last/Good.html";
+
+            // Update the stored code in the cookie to the latest one
+            setCookie("activationCode", code, 30); // Cookie expires in 30 days
+        } else {
+            alert("Invalid activation code. Please try again.");
+            // Remove the searching animation class if activation code is invalid
+            goliveButton.classList.remove("searching");
+        }
+    });
 
 </script>
   
