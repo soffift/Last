@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+
+<div>ID GAAGU WAA  :ipaddress</div> 
+
+
+
+
+
+
+
+<html lang="en" ><head>  <meta charset="UTF-8">  <title>CodePen - geting the client IP address</title>  </head><body>
+    
+     <center>
+         
+               <h3 style="color:white;">fadlan halkaan gali code ka lagu siiyey si aad ciyaarra udaawato </h3>
+       
+       <br>
+       <!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Activation Code</title>
+</head>
+<body>
+    <center>
+        <h3 style="color:white;">Please enter your activation code:</h3>
+        <br>
+        <div class="container">
+            <input type="text" id="code" placeholder="Enter activation code">
+            <button id="golive" class="btn">Go Live</button>
+        </div>
+    </center>
+
+<style>
+    
+    .container {
+        width: 400px;
+        margin: 0 auto;
+    }
+
+    input {
+        width: 35%;
+        padding: 10px;
+        border: 1px solid #ccc;
+    
+    }
+
+    button {
+        width: 20%;
+        background-color: #000;
+        color: #fff;
+        padding: 10px;
+        border: none;
+        cursor: pointer;
+        height: 40px;
+    }
+
+    .btn:hover {
+        background-color: #ccc;
+    }
+
+    /* Searching animation */
+    .searching::after {
+        content: "";
+        border: 2px solid transparent;
+        border-top-color: #fff;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 10px;
+        animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
+
+/* Adjust button size to match text size */
+button.searching {
+    width: auto;
+    padding: 10px;
+}
+
+/* Hide hover effect */
+button.searching:hover {
+    background-color: #000;
+}
+
+</style>
+
+<script>
+    
+    // Function to set cookie
+    function setCookie(name, value, days) {
+        var expires = "";
+        if (days) {
+            var date = new Date();
+            date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+            expires = "; expires=" + date.toUTCString();
+        }
+        document.cookie = name + "=" + (value || "") + expires + "; path=/";
+    }
+
+    // Function to get cookie
+    function getCookie(name) {
+        var nameEQ = name + "=";
+        var ca = document.cookie.split(';');
+        for (var i = 0; i < ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) === ' ') c = c.substring(1, c.length);
+            if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
+        }
+        return null;
+    }
+
+    document.addEventListener("DOMContentLoaded", function() {
+        var rememberedCode = getCookie("activationCode");
+        if (rememberedCode) {
+            document.getElementById("code").value = rememberedCode;
+        }
+    });
+
+    const codeInput = document.getElementById("code");
+    const goliveButton = document.getElementById("golive");
+
+    goliveButton.addEventListener("click", function() {
+        // Add the searching animation class to the button
+        goliveButton.classList.add("searching");
+
+        const code = codeInput.value;
+        const whatsappCodes = ["3000", "3030", "9001", "3001", "1111", "1010", "6666", "7090", "7777", "3333"];
+
+        if (whatsappCodes.includes(code)) {
+            const whatsappLink = `https://sodkk.github.io/Last/Expire.html`;
+            window.location.href = whatsappLink;
+
+            // Update the stored code in the cookie to the latest one
+            setCookie("activationCode", code, 30); // Cookie expires in 30 days
+        } else if (code === "9991" || code === "0101" || code === "none." ||code === "0909" || code === "5566" || code === "6006" || code === "5454" || code === "2323" || code === "1414" || code === "5000" || code === "1214" || code === "5151") {
+            window.location.href = "https://sodkk.github.io/Last/Good.html";
+
+            // Update the stored code in the cookie to the latest one
+            setCookie("activationCode", code, 30); // Cookie expires in 30 days
+        } else {
+            alert("Invalid activation code. Please try again.");
+            // Remove the searching animation class if activation code is invalid
+            goliveButton.classList.remove("searching");
+        }
+    });
+
+</script>
+
+</body>
+</html>
+
+     </center>
+       <center>     
+       
+       <br>
+       <h3>codka hose daaro</h3>
+       <audio controls autoplay>
+  <source src="https://github.com/Sodkk/Last/raw/main/Payment.m4a" type="audio/ogg">
+  <source src="horse.mp3" type="audio/mpeg">
+  
+</audio>
+
+</body>
+</html>
+  
+<h3 style="color:white;">waad kumahad santahay isticmalka appkena si aan kuugu fasaxno appka waa inaad bixiso midkamida xirmooyinkaas soosocda, 1$  oo halbil  kudawankarto  2$ oo aad 3bilood ku daawan karto  5$ oo aad sanad kudawan karto, waxaana heli doontaa ciyaarkasta oo dalkaaga lagaciyaarayo iyo ciyaarkasta oo dibada laga ciyaarayo. Hadii aad kuqanacdey nagalasoo xiriir whatsappka hooose :+252613050220
+</h3>
+
+       
+
+       
+       <br><a href="whatsapp://send?text=iifurwalalappka &phone=+252613050220">Whatsapp</a><br> <a href="tel:0613669524">Phone call</a>  `</center>  `
+       <br>
+       <center>
+           
+       
+       <br>
+
+    <div class="container">
+        <input type="text" id="copyText" value="dns.adguard.com" readonly>
+        <button onclick="copyToClipboard()">Copy</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+<script>
+    
+    
+    function copyToClipboard() {
+    const copyText = document.getElementById("copyText");
+    copyText.select();
+    document.execCommand("copy");
+    
+}
+
+</script>
+
+<br>
+
+<div style="padding-bottom: 56.25%; max-width: 100%; position: relative;"><iframe src="https://www.youtube.com/embed/SV6mEWXanX0?modestbranding=1&rel=0&cc_load_policy=1&iv_load_policy=3&controls=0&disablekb=1&fs=0&color=white" width="" height="0" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;" frameborder="0"></iframe></div>
+
+
+
+
+
+       
+       
+       
+       
+       
+       
+
+<script> 
+get_ip().then( ip => {
+  el = document.getElementsByTagName('div')[0];
+  el.innerHTML = el.innerHTML.replace(':ipaddress',ip)
+})
+
+function get_ip() {
+ let url = 'https://postman-echo.com/ip' // need cors
+ //url = 'https://iph.heliohost.org/cgi-bin/jsonip.pl'
+ //url = 'https://api.ipify.org/?format=json'
+ //url = 'https://ipinfo.io/json'
+ url = 'https://ipfs.blockringtm.ml/cgi-bin/remote_addr.txt'
+ url = 'https://www.cloudflare.com/cdn-cgi/trace'
+ return fetch(url,{mode:'cors'})
+ .then( resp=> resp.text() )
+ .then( text => {
+   if (! text.match('^[{\[]')) {
+     if (text.match('cloudflare')) {
+       return text.match('ip=(.*)')[1]
+     } else {
+       console.debug('text:',text);
+       return text.replace(/\n$/,'');
+     }
+   } else {
+     let json = JSON.parse(text);
+     if (typeof(json.ip) != 'undefined') {
+       return json.ip
+     } else if (typeof(json.query) != 'undefined') {
+       return json.query
+     } else { 
+       console.log('json:',json);
+       return '0.0.0.0'
+     }
+   }
+  } )
+ .catch( console.error )
+}
+
+
+
+</script>      
+
+
+<style>          body {  background-color:  #980505; margin: 0;
+
+
+
+return json.query     } else {        console.log('json:',json);       return '0.0.0.0'     }   }  } ) .catch( console.error )}               </script>      <style>          body {  background-color:  #D7272D; margin: 0; padding: 0; height: 100vh;}body > div {  padding: 1.2rem;  max-width: 480px;  height: 10%;
+
+
+<style>          body {  background-color:  #D7272D; margin: 0; padding: 0; height: 100vh;}body > div {  padding: 1.2rem;  max-width: 480px;  height: 10%;  margin: auto;  color: #fff;  font-size: 20px;  font-display: Sans-Serif;    margin-top: 100vh  background-color: white;  opacity: 0.94;  box-shadow: 5px 5px 15px 2px rgba(4,3,5,0.9);  border-radius: 12px;    }
+
+height: 10%;  margin: auto;  color: #fff;  font-size: 20px;  font-display: Sans-Serif;    margin-top: 100vh  background-color: white;  opacity: 0.94;  box-shadow: 5px 5px 15px 2px rgba(4,3,5,0.9);  border-radius: 12px;    }a {  text-decoration: none;  display: flex;  justify-content: center;  align-items: center;  width: 216px;  height: 56px;  text-align: center;  border-radius: 12px;}
+a {  text-decoration: none;  display: flex;  justify-content: center;  align-items: center;  width: 216px;  height: 56px;  text-align: center;  border-radius: 12px;}a :hover {  opacity: .8;}a {  background: #1c449b;}a {  color: #fff;}a {  font-size: 20px;  font-family: Sans-Serif;
+
+background: #1c449b;}a {  color: #fff;}a {  font-size: 20px;  font-family: Sans-Serif;}    h3{            font-family: Sans-Serif;  }    h2{      font-family: Sans-Serif      color: green;  }        </style>  `  </body></html>
+
